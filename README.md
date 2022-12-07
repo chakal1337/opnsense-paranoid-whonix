@@ -35,6 +35,8 @@ OpnSense Configuration:
 ```
 - install opnsense on a vm
 - configure LAN on vtnet0 with upstream as 192.168.100.1
+- assign 192.168.100.5 as the ip address
+- leave ipv6 unconfigured
 - update opnsense from the web gui
  
 - go to system > firmware > plugins and install os-tor
