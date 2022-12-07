@@ -27,6 +27,7 @@ Host OS configuration:
   - delete default network
   - make new network called default
   - Nat mode
+  - Leave 192.168.100.0 as the nat network
   - pass to physical device wg-mullvad 
 ```
 
