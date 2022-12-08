@@ -2,7 +2,7 @@
  
  For peace of mind we will only use open source software to build this network: kvm (with virt-manager), mullvad-vpn, opnsense and tor.
 
- Warning: if the guest OS is compromised an attacker may change the default gateway to discover mullvad's ip address, in order to prevent this you must apply firewall rules in your host os to the virtual nat network interface for restricting access to opnsense's upstream (usually 192.168.100.1), allowing only 192.168.100.5 (opnsense's static ip) to use it.
+ Warning: if the guest OS is compromised and rooted an attacker may change the default gateway to discover mullvad's ip address, in order to prevent this you must apply firewall rules in your host os to the virtual nat network interface for restricting access to opnsense's upstream (usually 192.168.100.1), allowing only 192.168.100.5 (opnsense's static ip) to use it.
 
  Please report any issues with the configuration in the issues tab and they will be fixed as soon as possible.
 
@@ -114,8 +114,8 @@ Guest OS Configuration:
 ```
 - for windows do it through the gui network manager (same way: address, netmask, gateway)
 - for other OS google how to do static network configuration
-- edit the following file and add the contents below: /etc/network/interfaces then reboot the machine 
 - increment the ip address if you're running more than one guest
+- edit the following file and add the contents below: /etc/network/interfaces then reboot the machine 
 
 auto lo
 iface lo inet loopback
