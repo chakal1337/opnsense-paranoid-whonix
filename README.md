@@ -52,7 +52,7 @@ OpnSense Configuration:
  - Socks Proxy ACL 
   - enable: check 
   - protocol: IPV4
-  - network: 0.0.0.0
+  - network: 0.0.0.0/0
   - action: accept
  - General > Advanced Mode 
   - listen interfaces: lan
