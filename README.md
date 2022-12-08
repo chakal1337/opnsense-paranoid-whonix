@@ -2,6 +2,8 @@
 
  Warning: if the guest OS is compromised an attacker may change the default gateway to discover mullvad's ip address, in order to prevent this you must apply firewall rules in your host os to the virtual nat network interface for restricting access to opnsense's upstream (usually 192.168.100.1), allowing only 192.168.100.5 (opnsense's static ip) to use it.
 
+ Please report any issues with the configuration in the issues tab and they will be fixed as soon as possible.
+
 Host OS configuration:
 ```
 - Host: Linux distro preferably debian or rhel based
