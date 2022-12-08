@@ -1,3 +1,7 @@
+ The following configuration allows for running a secure network where tor is used as a transparent proxy for all the hosts in the LAN to access the internet, for extra security we disable ipv6 as well as any protocols other than tcp and udp (only port 53 allowed), only the firewall is allowed to directly contact the internet. 
+
+ Warning: if the guest OS is compromised an attacker may change the default gateway to discover mullvad's ip address, in order to prevent this you must apply firewall rules in your host os to the virtual nat network interface for restricting access to opnsense's upstream (usually 192.168.100.1), allowing only 192.168.100.5 (opnsense's static ip) to use it.
+
 Host OS configuration:
 ```
 - Host: Linux distro preferably debian or rhel based
