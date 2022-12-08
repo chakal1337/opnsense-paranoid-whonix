@@ -106,7 +106,8 @@ Guest OS Configuration:
 ```
 - for windows do it through the gui network manager (same way: address, netmask, gateway)
 - for other OS google how to do static network configuration
-- edit the following file and add the contents below: /etc/network/interfaces then reboot the machine (increment the ip if you're running more than one guest)
+- edit the following file and add the contents below: /etc/network/interfaces then reboot the machine 
+- increment the ip if you're running more than one guest
 
 auto lo
 iface lo inet loopback
